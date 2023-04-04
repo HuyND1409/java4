@@ -2,6 +2,7 @@ package repository;
 
 
 import domain_model.NhanVienDomain;
+import jakarta.persistence.NoResultException;
 import jakarta.persistence.TypedQuery;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -16,6 +17,7 @@ public class NhanVienRepository {
     public NhanVienRepository() {
         this.hsession = HibernateUtil.getFACTORY().openSession();
     }
+
     public void insert(NhanVienDomain qlms) {
         Transaction transaction = this.hsession.getTransaction();
         try {
@@ -63,6 +65,21 @@ public class NhanVienRepository {
         TypedQuery<NhanVienDomain> query = this.hsession.createQuery(hql, NhanVienDomain.class);
         query.setParameter(1, ma);
         return query.getSingleResult();
+    }
+
+    public NhanVienDomain login(String ma, String matKhau) {
+        String hql = "Select nv From nv Where NhanVien nv.ma = ?1 And nv.matKhau = ?1";
+        TypedQuery<NhanVienDomain> query = this.hsession.createQuery(hql, NhanVienDomain.class);
+        query.setParameter(1, ma);
+        query.setParameter(2, matKhau),
+        try {
+            NhanVienDomain nv = query.getSingleResult();
+            return nv;
+        } catch (NoResultException e) {
+            e.printStackTrace();
+            return null;
+        }
+
     }
 
 }
