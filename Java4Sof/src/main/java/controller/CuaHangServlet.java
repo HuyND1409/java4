@@ -1,5 +1,6 @@
 package controller;
 
+import domain_model.CuaHangDomain;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;

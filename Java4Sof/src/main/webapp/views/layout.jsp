@@ -104,22 +104,22 @@
                                 <a class="nav-link" href="/../nsx/index">Nhà Sản Xuất</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/DuAnMauJava4_war_exploded/mausac/index">Màu Sắc</a>
+                                <a class="nav-link" href="/../mausac/index">Màu Sắc</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/../dongSP/index">Dòng Sản Phẩm</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/DuAnMauJava4_war_exploded/nhanvien/index">Nhân Viên</a>
+                                <a class="nav-link" href="/../nhanvien/index">Nhân Viên</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/DuAnMauJava4_war_exploded/ctsanpham/index">Chi Tiết Sản Phẩm</a>
+                                <a class="nav-link" href="/../ctsanpham/index">Chi Tiết Sản Phẩm</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/DuAnMauJava4_war_exploded/hoadon/index">Hóa Đơn</a>
+                                <a class="nav-link" href="/../hoadon/index">Hóa Đơn</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/DuAnMauJava4_war_exploded/hoadonct/index">Hóa Đơn Chi Tiết</a>
+                                <a class="nav-link" href="/../hoadonct/index">Hóa Đơn Chi Tiết</a>
                             </li>
 
                         </ul>
