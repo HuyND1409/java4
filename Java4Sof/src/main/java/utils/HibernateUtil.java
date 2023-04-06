@@ -1,9 +1,7 @@
 package utils;
 
 
-import domain_model.KhachHangDomain;
-import domain_model.ChucVuDomain;
-import domain_model.NSXDomain;
+import domain_model.*;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;

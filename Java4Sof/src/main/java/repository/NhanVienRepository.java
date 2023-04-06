@@ -71,7 +71,7 @@ public class NhanVienRepository {
         String hql = "Select nv From nv Where NhanVien nv.ma = ?1 And nv.matKhau = ?1";
         TypedQuery<NhanVienDomain> query = this.hsession.createQuery(hql, NhanVienDomain.class);
         query.setParameter(1, ma);
-        query.setParameter(2, matKhau),
+        query.setParameter(2, matKhau);
         try {
             NhanVienDomain nv = query.getSingleResult();
             return nv;

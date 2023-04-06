@@ -10,7 +10,8 @@
     <h1><%= "Bảng" %>
     </h1>
     <br/>
-    <a href="/../khachhang/index">Ấn Zô Đii</a>
+    <button type="button" class="btn btn-primary" href="/../login">Primary</button>
+    <a href="/views/login.jsp">Đăng Nhập</a>
 </center>
 </body>
 </html>

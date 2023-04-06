@@ -15,8 +15,9 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response)
             throws ServletException, IOException {
-        request.setAttribute("view", "login.jsp");
-        request.getRequestDispatcher("/views/layout.jsp").forward(request, response);
+        request.setAttribute("view", "/views/login.jsp");
+        request.getRequestDispatcher("/views/layout.jsp")
+                .forward(request, response);
     }
 
     @Override
